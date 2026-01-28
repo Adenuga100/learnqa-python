@@ -1,0 +1,51 @@
+from behave import given, when, then, runner
+# The import error usually disappears once __init__.py is added to the pages folder
+from pages.signin_page import SigninPage
+
+# @given('the user is on the login page')
+# def go_to_login(context):
+#     # We initialize it here, or better yet, in environment.py
+#     context.login_page = LoginPage(context.page)
+#     context.login_page.navigate()
+#
+# @when('the user enters "{username}" and "{password}"')
+# def enter_credentials(context, username, password):
+#     # Use context.login_page instead of passing it as an argument
+#     context.login_page.login(username, password)
+#
+# @then('the user should be redirected to the inventory page')
+# def verify_redirect(page):
+#     assert "inventory.html" in page.url
+
+
+@given(u'User is on the login page')
+def step_impl(context):
+    context.signin_page = SigninPage(context.page)
+    context.signin_page.navigate()
+
+
+@when(u'User enters "{email}"')
+def step_impl(context, email):
+    context.signin_page.fill_email(email)
+
+@when(u'user click on signin button')
+def step_impl(context:runner.context):
+    context.signin_page.signin_button()
+
+
+@when(u'User enters as "{password}"')
+def step_impl(context, password):
+    context.signin_page.fill_password(password)
+
+
+@when(u'User click on login button')
+def step_impl(context):
+    context.signin_page.login_button()
+
+
+
+@then(u'User should be redirected to the inventory page')
+def step_impl(context):
+    context.signin_page.inventory_button()
+    # assert "inventory.html" in  context.page.url
+    # raise StepNotImplementedError(u'Then user click on login button')
