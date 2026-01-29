@@ -1,4 +1,4 @@
-from behave import given, when, then, runner
+from behave import given, when, then, runner, When
 # The import error usually disappears once __init__.py is added to the pages folder
 from pages.signin_page import SigninPage
 
@@ -24,18 +24,17 @@ def step_impl(context):
     context.signin_page.navigate()
 
 
-@when(u'User enters "{email}"')
-def step_impl(context, email):
-    context.signin_page.fill_email(email)
+@when(u'User enters email')
+def step_impl(context):
+    context.signin_page.fill_email()
 
 @when(u'user click on signin button')
-def step_impl(context:runner.context):
+def step_impl(context:runner.Context):
     context.signin_page.signin_button()
 
 
 @when(u'User enters as "{password}"')
 def step_impl(context, password):
-    context.page.pause()
     context.signin_page.fill_password(password)
 
 
@@ -65,3 +64,8 @@ def step_impl(context):
 @when("User click on cookies")
 def step_impl(context:runner.Context):
     context.signin_page.cookies_button()
+
+
+@When('User enters "{email}"')
+def step_impl(context:runner.Context, email):
+    context.signin_page.email_input(email)

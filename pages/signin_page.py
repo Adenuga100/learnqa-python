@@ -1,7 +1,9 @@
 # pages/search_page.py
 from playwright.sync_api import Page
 # pages/signin_page.py
+import uuid
 from playwright.sync_api import Page
+
 
 class SigninPage:
     def __init__(self, page: Page):
@@ -20,8 +22,16 @@ class SigninPage:
     def navigate(self):
         self.page.goto("https://www.learnaqa.info/")
 
-    def fill_email(self, username):
-        self._email.fill(username)
+    def fill_email(self):
+        random_id = str(uuid.uuid4())[:3]
+        random_email = f"user_{random_id}@testmail.com"
+        self._email.fill(random_email)
+        return
+
+    def email_input(self, email):
+
+        self._email.fill(email)
+
 
     def signin_button(self):
         self._signin_btn.nth(1).click()
