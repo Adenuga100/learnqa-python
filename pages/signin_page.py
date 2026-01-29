@@ -7,9 +7,13 @@ class SigninPage:
     def __init__(self, page: Page):
         self.page = page
         self._signin_btn = page.get_by_role('button', name='Sign In')
+        self._signup_button = page.get_by_role('button', name='Sign Up')
         self._email = page.locator('[name="email"]')
+        self._name = page.locator('[name="full_name"]')
         self._password = page.locator('[name="password"]')
         self._signin_button = page.get_by_role('button', name='Sign In')
+        self._create_button = page.locator('[type="submit"]')
+        self._cookies_btn = page.get_by_role('button', name='Accept All')
         self._error_msg = page.locator("[data-test='error']")
         self._inventory = page.get_by_text("Practice Dashboard")
 
@@ -28,6 +32,18 @@ class SigninPage:
 
     def login_button(self):
         self._signin_button.click()
+
+    def sign_up_button(self):
+        self._signup_button.nth(1).click()
+
+    def full_name(self, fullname):
+        self._name.fill(fullname)
+
+    def create_account_button(self):
+        self._create_button.click()
+
+    def cookies_button(self):
+        self._cookies_btn.click()
 
     def inventory_button(self):
          return self._inventory.text_content()
