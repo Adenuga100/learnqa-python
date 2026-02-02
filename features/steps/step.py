@@ -1,4 +1,4 @@
-from behave import given, when, then, runner
+from behave import given, when, then, runner, When
 # The import error usually disappears once __init__.py is added to the pages folder
 from pages.signin_page import SigninPage
 
@@ -24,12 +24,12 @@ def step_impl(context):
     context.signin_page.navigate()
 
 
-@when(u'User enters "{email}"')
-def step_impl(context, email):
-    context.signin_page.fill_email(email)
+@when(u'User enters email')
+def step_impl(context):
+    context.signin_page.fill_email()
 
 @when(u'user click on signin button')
-def step_impl(context:runner.context):
+def step_impl(context:runner.Context):
     context.signin_page.signin_button()
 
 
@@ -42,10 +42,30 @@ def step_impl(context, password):
 def step_impl(context):
     context.signin_page.login_button()
 
+@when(u'user click on sign up button')
+def step_impl(context):
+    context.signin_page.sign_up_button()
 
+@when(u'user enters full name as"{fullname}"')
+def step_impl(context, fullname):
+    context.signin_page.full_name(fullname)
+
+@when(u'User click on create account button')
+def step_impl(context):
+    context.signin_page.create_account_button()
 
 @then(u'User should be redirected to the inventory page')
 def step_impl(context):
     context.signin_page.inventory_button()
     # assert "inventory.html" in  context.page.url
     # raise StepNotImplementedError(u'Then user click on login button')
+
+
+@when("User click on cookies")
+def step_impl(context:runner.Context):
+    context.signin_page.cookies_button()
+
+
+@When('User enters "{email}"')
+def step_impl(context:runner.Context, email):
+    context.signin_page.email_input(email)
