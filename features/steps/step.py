@@ -69,3 +69,8 @@ def step_impl(context:runner.Context):
 @When('User enters "{email}"')
 def step_impl(context:runner.Context, email):
     context.signin_page.email_input(email)
+
+@When('User click on start practice as"{name}"')
+def step_impl(context: runner.Context, name):
+    context.page.pause()
+    context.signin_page.start_practice_button(name)

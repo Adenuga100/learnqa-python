@@ -32,6 +32,10 @@ class SigninPage:
 
         self._email.fill(email)
 
+    def start_practice_button(self, name):
+        self._email = self.page.locator(f"//div[contains(@class,'card')][.//span[normalize-space()='{name}']]//button")
+        self._email.click()
+
 
     def signin_button(self):
         self._signin_btn.nth(1).click()
