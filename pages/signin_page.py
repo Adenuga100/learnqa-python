@@ -1,4 +1,7 @@
 # pages/search_page.py
+import time
+from itertools import count
+
 from playwright.sync_api import Page
 # pages/signin_page.py
 import uuid
@@ -18,6 +21,7 @@ class SigninPage:
         self._cookies_btn = page.get_by_role('button', name='Accept All')
         self._error_msg = page.locator("[data-test='error']")
         self._inventory = page.get_by_text("Practice Dashboard")
+        self._items = page.get_by_role("heading", name="Drag and Drop Practice")
 
     def navigate(self):
         self.page.goto("https://www.learnaqa.info/")
@@ -32,9 +36,30 @@ class SigninPage:
 
         self._email.fill(email)
 
+    def slide_menu(self, menu):
+        _menu = self.page.get_by_role("heading", name="Drag and Drop Practice")
+        _menu.click()
+
+
     def start_practice_button(self, name):
-        self._email = self.page.locator(f"//div[contains(@class,'card')][.//span[normalize-space()='{name}']]//button")
-        self._email.click()
+        _practice = self.page.locator(f"//div[contains(@class,'card')][.//span[normalize-space()='{name}']]//button")
+        _practice.click()
+
+    def drag_and_drop_items(self):
+        _drag= self.page.locator("//div[@class='space-y-3 min-h-[200px]']//div[contains(@id,'item')]")
+        _drop = self.page.locator("//div[contains(@id,'drop-zone')]")
+        count = _drag.count()
+
+        for i in range(count):
+            time.sleep(2)
+            _drag.nth(0).drag_to(_drop)
+
+        # while (True):
+        #     # context.page.pause()
+        #     _drag.nth(0).drag_to(_drop)
+        #     if count() > 0:
+        #       break;
+
 
 
     def signin_button(self):
@@ -61,6 +86,10 @@ class SigninPage:
 
     def inventory_button(self):
          return self._inventory.text_content()
+
+    def views_item(self):
+         return self._items.text_content()
+
 
 
     # def get_error_message(self):

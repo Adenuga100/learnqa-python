@@ -72,5 +72,20 @@ def step_impl(context:runner.Context, email):
 
 @When('User click on start practice as"{name}"')
 def step_impl(context: runner.Context, name):
-    context.page.pause()
+    # context.page.pause()
     context.signin_page.start_practice_button(name)
+
+
+@When("user drag and drop all the items")
+def step_impl(context:runner.Context):
+    context.signin_page.drag_and_drop_items()
+
+
+@then("user drop all the items successfully")
+def step_impl(context:runner.Context):
+    context.signin_page.views_item()
+
+
+@when('User click "{menu}" on the slide menu')
+def step_impl(context:runner.Context, menu):
+    context.signin_page.slide_menu(menu)

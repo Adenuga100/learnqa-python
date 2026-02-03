@@ -10,3 +10,10 @@ Feature: Drag and drop
 
   Scenario: Click on drag and drop from the dashboard
     When User click on start practice as"Drag & Drop"
+    And user drag and drop all the items
+    Then user drop all the items successfully
+
+  Scenario: Click on drag and drop from slide menu
+    When User click "Drag & Drop" on the slide menu
+    And user drag and drop all the items
+    Then user drop all the items successfully
