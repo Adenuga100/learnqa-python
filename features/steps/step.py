@@ -88,4 +88,5 @@ def step_impl(context:runner.Context):
 
 @when('User click "{menu}" on the slide menu')
 def step_impl(context:runner.Context, menu):
+    # context.page.pause()
     context.signin_page.slide_menu(menu)

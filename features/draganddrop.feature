@@ -14,6 +14,6 @@ Feature: Drag and drop
     Then user drop all the items successfully
 
   Scenario: Click on drag and drop from slide menu
-    When User click "Drag & Drop" on the slide menu
+    When User click "Drag and Drop" on the slide menu
     And user drag and drop all the items
     Then user drop all the items successfully

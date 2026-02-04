@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bd4036b-46fc-4894-805c-52562be46b35" name="Changes" comment="drapanddrop">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/draganddrop.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/draganddrop.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/steps/step.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/step.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/signin_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/signin_page.py" afterDir="false" />
@@ -39,12 +40,23 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Adenuga100/learnqa-python.git",
-    "accountId": "0b7bbada-0cb6-4ab2-98d6-bf37f2346121"
-  }
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
+    {
+      "id": {
+        "id": "PR_kwDORDj2As7A5fyF",
+        "number": 3
+      },
+      "lastSeen": 1770186284158
+    }
+  ]
 }]]></component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Adenuga100/learnqa-python.git&quot;,
+    &quot;accountId&quot;: &quot;0b7bbada-0cb6-4ab2-98d6-bf37f2346121&quot;
+  }
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -62,7 +74,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Behave.draganddrop.feature.executor": "Run",
+    "Behave.draganddrop.feature.executor": "Debug",
     "Behave.draganddrop.feature:Click on drag and drop from slide menu.executor": "Run",
     "Behave.draganddrop.feature:Click on drag and drop from the dashboard.executor": "Run",
     "Behave.draganddrop.feature:Successful login with valid credentials.executor": "Run",
@@ -77,7 +89,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "#3 on main",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -94,7 +106,7 @@
       <recent name="C:\Users\NUGA\PycharmProjects\LearningPython\features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.draganddrop.feature:Click on drag and drop from slide menu">
+  <component name="RunManager" selected="Behave.draganddrop.feature:Click on drag and drop from the dashboard">
     <configuration name="draganddrop.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="LearningPython" />
       <option name="ENV_FILES" value="" />
@@ -181,9 +193,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.draganddrop.feature:Click on drag and drop from the dashboard" />
         <item itemvalue="Behave.draganddrop.feature:Click on drag and drop from slide menu" />
         <item itemvalue="Behave.draganddrop.feature" />
-        <item itemvalue="Behave.draganddrop.feature:Click on drag and drop from the dashboard" />
         <item itemvalue="Behave.signin.feature:Successful login with valid credentials" />
         <item itemvalue="Behave.draganddrop.feature:Successful login with valid credentials" />
       </list>
@@ -206,6 +218,7 @@
       <updated>1769611747202</updated>
       <workItem from="1769611748244" duration="16063000" />
       <workItem from="1770029925091" duration="13447000" />
+      <workItem from="1770186094497" duration="2402000" />
     </task>
     <task id="LOCAL-00001" summary="sign up">
       <option name="closed" value="true" />
@@ -281,15 +294,26 @@
     <MESSAGE value="drapanddrop" />
     <option name="LAST_COMMIT_MESSAGE" value="drapanddrop" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pages/signin_page.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/learnqa_python$draganddrop_feature_Click_on_drag_and_drop_from_the_dashboard.coverage" NAME="draganddrop.feature:Click on drag and drop from the dashboard Coverage Results" MODIFIED="1770117247120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/learnqa_python$draganddrop_feature_Click_on_drag_and_drop_from_the_dashboard.coverage" NAME="draganddrop.feature:Click on drag and drop from the dashboard Coverage Results" MODIFIED="1770188534193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/LearningPython$signin_feature_Successful_login_with_valid_credentials.coverage" NAME="signin.feature:Successful login with valid credentials Coverage Results" MODIFIED="1769682472303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$signin_feature_Successful_login_with_valid_credentials.coverage" NAME="signin.feature:Successful login with valid credentials Coverage Results" MODIFIED="1770034022987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$signup_feature_Successful_login_with_valid_credentials.coverage" NAME="signup.feature:Successful login with valid credentials Coverage Results" MODIFIED="1770031814272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/learnqa_python$draganddrop_feature.coverage" NAME="draganddrop.feature Coverage Results" MODIFIED="1770150886048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/learnqa_python$draganddrop_feature.coverage" NAME="draganddrop.feature Coverage Results" MODIFIED="1770187971348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/LearningPython$login_feature.coverage" NAME="login.feature Coverage Results" MODIFIED="1769630503316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/LearningPython$signup_feature_Successful_login_with_valid_credentials.coverage" NAME="signup.feature:Successful login with valid credentials Coverage Results" MODIFIED="1769682501229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$draganddrop_feature_Successful_login_with_valid_credentials.coverage" NAME="draganddrop.feature:Successful login with valid credentials Coverage Results" MODIFIED="1770033980730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/learnqa_python$draganddrop_feature_Click_on_drag_and_drop_from_slide_menu.coverage" NAME="draganddrop.feature:Click on drag and drop from slide menu Coverage Results" MODIFIED="1770151328045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/learnqa_python$draganddrop_feature_Click_on_drag_and_drop_from_slide_menu.coverage" NAME="draganddrop.feature:Click on drag and drop from slide menu Coverage Results" MODIFIED="1770188512331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

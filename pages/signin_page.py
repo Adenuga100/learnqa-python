@@ -37,7 +37,8 @@ class SigninPage:
         self._email.fill(email)
 
     def slide_menu(self, menu):
-        _menu = self.page.get_by_role("heading", name="Drag and Drop Practice")
+        # _menu = self.page.get_by_role("link", name="{menu}")
+        _menu = self.page.locator(f"//nav[@class='p-4 space-y-1']//span[text()='{menu}']")
         _menu.click()
 
 
@@ -48,17 +49,16 @@ class SigninPage:
     def drag_and_drop_items(self):
         _drag= self.page.locator("//div[@class='space-y-3 min-h-[200px]']//div[contains(@id,'item')]")
         _drop = self.page.locator("//div[contains(@id,'drop-zone')]")
-        count = _drag.count()
+        # count= _drag.count()
 
-        for i in range(count):
-            time.sleep(2)
+        # for i in range(count):
+        #     time.sleep(2)
+        #     _drag.nth(0).drag_to(_drop)
+
+        while _drag.count()>0:
+            # context.page.pause()
             _drag.nth(0).drag_to(_drop)
 
-        # while (True):
-        #     # context.page.pause()
-        #     _drag.nth(0).drag_to(_drop)
-        #     if count() > 0:
-        #       break;
 
 
 
