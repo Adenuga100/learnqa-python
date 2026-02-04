@@ -90,3 +90,24 @@ def step_impl(context:runner.Context):
 def step_impl(context:runner.Context, menu):
     # context.page.pause()
     context.signin_page.slide_menu(menu)
+
+
+@When('User click on button as"{btn}"')
+def step_impl(context:runner.Context, btn):
+    context.signin_page.button_as(btn)
+
+
+
+@then("user views delayed elements successfully")
+def step_impl(context:runner.Context):
+   context.signin_page.views_delayed_elements()
+
+
+@When("user scroll to each dynamic items")
+def step_impl(context:runner.Context):
+    context.signin_page.scroll_to_dynamic_items()
+
+
+@then("user views last item")
+def step_impl(context:runner.Context):
+   context.signin_page.views_last_item()
