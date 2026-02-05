@@ -24,6 +24,10 @@ class SigninPage:
         self._items = page.get_by_role("heading", name="Drag and Drop Practice")
         self._views_delayed_elements = page.get_by_text('✓ Element appeared after 5 second delay!')
         self._views_last_item = page.get_by_text('Dynamic Item 5')
+        self._views_Last_Lazy_Loading_Items = page.locator('[class*="lazy-image-placeholder"]').last
+        self._views_Infinite = page.get_by_text('No more items to load')
+        self._views_hidden_element = page.get_by_text('Hidden element revealed!')
+        self._generate_dynamic_content = page.locator('[id="dynamic-content"]')
 
     def navigate(self):
         self.page.goto("https://www.learnaqa.info/")
@@ -46,6 +50,8 @@ class SigninPage:
     def button_as(self, btn):
         # _menu = self.page.get_by_role("link", name="{menu}")
         _button_as = self.page.get_by_role("button", name=f'{btn}')
+        _button_as.scroll_into_view_if_needed()
+        time.sleep(2)
         _button_as.click()
         time.sleep(6)
 
@@ -89,6 +95,44 @@ class SigninPage:
         # while _scroll_to_dynamic_items.count()>0:
         #     _scroll_to_dynamic_items.scroll_into_view_if_needed()
 
+    def scroll_to_lazy_loading_items(self):
+        _scroll_To_Lazy_Loading_Items= self.page.locator("[class*='lazy-image-placeholder']")
+
+        # count= _drag.count()
+
+        # for i in range(count):
+        #     time.sleep(2)
+        #     _drag.nth(0).drag_to(_drop)
+        last_count = 0
+
+        while True:
+            count = _scroll_To_Lazy_Loading_Items.count()
+
+            if count == last_count:
+                break  # no new items loaded
+
+            last_count = count
+            _scroll_To_Lazy_Loading_Items.nth(count-1).scroll_into_view_if_needed()
+
+        # while _scroll_to_dynamic_items.count()>0:
+        #     _scroll_to_dynamic_items.scroll_into_view_if_needed()
+
+    def scroll_to_infinite_scroll(self):
+        _scroll_To_Infinite_Scroll= self.page.locator("[class*='scroll-item p-3 bg-white rounded border']")
+        last_count = 0
+        while True:
+            time.sleep(2)
+            count = _scroll_To_Infinite_Scroll.count()
+
+            if count == last_count:
+                break  # no new items loaded
+
+            last_count = count
+            _scroll_To_Infinite_Scroll.nth(count-1).scroll_into_view_if_needed()
+            time.sleep(6)
+        # while _scroll_to_dynamic_items.count()>0:
+        #     _scroll_to_dynamic_items.scroll_into_view_if_needed()
+
 
 
 
@@ -125,6 +169,18 @@ class SigninPage:
 
     def views_last_item(self):
          return self._views_last_item.text_content()
+
+    def views_last_lazy_loading_items(self):
+         return self._views_Last_Lazy_Loading_Items.text_content()
+
+    def views_infinite_scroll(self):
+         return self._views_Infinite.text_content()
+
+    def views_hidden_element(self):
+         return self._views_hidden_element.text_content()
+
+    def generate_dynamic_content(self):
+         return self._generate_dynamic_content.text_content()
 
 
 

@@ -111,3 +111,33 @@ def step_impl(context:runner.Context):
 @then("user views last item")
 def step_impl(context:runner.Context):
    context.signin_page.views_last_item()
+
+
+@When("user scroll to each lazy loading images")
+def step_impl(context:runner.Context):
+ context.signin_page.scroll_to_lazy_loading_items()
+
+
+@then("user views last lazy loading images")
+def step_impl(context:runner.Context):
+    context.signin_page.views_last_lazy_loading_items()
+
+
+@When("user scroll to each Infinite Scroll")
+def step_impl(context:runner.Context):
+  context.signin_page.scroll_to_infinite_scroll()
+
+
+@then("user views last Infinite Scroll")
+def step_impl(context:runner.Context):
+   context.signin_page.views_infinite_scroll()
+
+
+@then("user views hidden element")
+def step_impl(context:runner.Context):
+    context.signin_page.views_hidden_element()
+
+
+@then("user views generate dynamic content")
+def step_impl(context:runner.Context):
+   context.signin_page.generate_dynamic_content()
