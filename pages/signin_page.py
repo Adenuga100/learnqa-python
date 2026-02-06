@@ -28,6 +28,7 @@ class SigninPage:
         self._views_Infinite = page.get_by_text('No more items to load')
         self._views_hidden_element = page.get_by_text('Hidden element revealed!')
         self._generate_dynamic_content = page.locator('[id="dynamic-content"]')
+        self._process_file = page.get_by_text('File processed successfully!')
 
     def navigate(self):
         self.page.goto("https://www.learnaqa.info/")
@@ -54,6 +55,19 @@ class SigninPage:
         time.sleep(2)
         _button_as.click()
         time.sleep(6)
+
+    def download_button(self):
+        # _menu = self.page.get_by_role("link", name="{menu}")
+        _download_button = self.page.get_by_role("button", name="Download", exact=True)
+        _download_button.scroll_into_view_if_needed()
+        time.sleep(2)
+        _download_button.click()
+
+    # def test_example(page: Page) -> None:
+    #     with page.expect_download() as download_info:
+    #         page.get_by_role("button", name="Download", exact=True).click()
+    #     download = download_info.value
+    #     page.get_by_text("File processed successfully!").click()
 
 
     def start_practice_button(self, name):
@@ -155,6 +169,11 @@ class SigninPage:
     def create_account_button(self):
         self._create_button.click()
 
+    def select_file(self):
+        file_path = "c:\\Users\\NUGA\\Downloads\\template_data (1).xlsx"
+        self.page.set_input_files("input[type='file']",file_path)
+
+
     def cookies_button(self):
         self._cookies_btn.click()
 
@@ -181,6 +200,9 @@ class SigninPage:
 
     def generate_dynamic_content(self):
          return self._generate_dynamic_content.text_content()
+
+    def process_file(self):
+         return self._process_file.text_content()
 
 
 

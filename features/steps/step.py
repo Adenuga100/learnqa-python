@@ -141,3 +141,19 @@ def step_impl(context:runner.Context):
 @then("user views generate dynamic content")
 def step_impl(context:runner.Context):
    context.signin_page.generate_dynamic_content()
+
+
+@When("user select a file")
+def step_impl(context:runner.Context):
+    context.signin_page.select_file()
+
+
+@then("user views file processed successfully")
+def step_impl(context:runner.Context):
+    context.signin_page.process_file()
+
+
+@When("user click on  download button")
+def step_impl(context: runner.Context):
+    # context.page.pause()
+    context.signin_page.download_button()

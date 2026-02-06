@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bd4036b-46fc-4894-805c-52562be46b35" name="Changes" comment="AJAX Data Loading">
-      <change beforePath="$PROJECT_DIR$/features/Dynamic.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Dynamic.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/FileOperationsPractice.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/steps/step.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/step.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/signin_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/signin_page.py" afterDir="false" />
     </list>
@@ -39,17 +40,17 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": [
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
     {
-      "id": {
-        "id": "PR_kwDORDj2As7A5fyF",
-        "number": 3
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDORDj2As7A5fyF&quot;,
+        &quot;number&quot;: 3
       },
-      "lastSeen": 1770225952803
+      &quot;lastSeen&quot;: 1770225952803
     }
   ]
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Adenuga100/learnqa-python.git&quot;,
@@ -84,6 +85,8 @@
     "Behave.Dynamic.feature:Click on Dynamic Elements the dashboard to Hidden & Dynamic Elements.executor": "Run",
     "Behave.Dynamic.feature:Click on Dynamic Elements the dashboard to Infinite Scroll.executor": "Run",
     "Behave.Dynamic.feature:Click on Dynamic Elements the dashboard to Lazy Loading Images.executor": "Run",
+    "Behave.FileOperationsPractice.feature.executor": "Run",
+    "Behave.FileOperationsPractice.feature:Click on File Operations.executor": "Run",
     "Behave.draganddrop.feature.executor": "Debug",
     "Behave.draganddrop.feature:Click on drag and drop from slide menu.executor": "Run",
     "Behave.draganddrop.feature:Click on drag and drop from the dashboard.executor": "Run",
@@ -99,7 +102,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "#3 on main",
+    "git-widget-placeholder": "#4 on main",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -116,7 +119,7 @@
       <recent name="C:\Users\NUGA\PycharmProjects\LearningPython\features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.Dynamic.feature">
+  <component name="RunManager" selected="Behave.FileOperationsPractice.feature:Click on File Operations">
     <configuration name="Dynamic.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="LearningPython" />
       <option name="ENV_FILES" value="" />
@@ -167,7 +170,7 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Dynamic.feature:Click on Dynamic Elements from slide menu to Lazy Loading Images" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+    <configuration name="FileOperationsPractice.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="LearningPython" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -179,12 +182,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Dynamic.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="Click on Dynamic Elements from slide menu to Lazy Loading Images" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/FileOperationsPractice.feature" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Dynamic.feature:Click on Dynamic Elements the dashboard to Hidden &amp; Dynamic Elements" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+    <configuration name="FileOperationsPractice.feature:Click on File Operations" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="LearningPython" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -196,18 +198,18 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Dynamic.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="Click on Dynamic Elements the dashboard to Hidden &amp; Dynamic Elements" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/FileOperationsPractice.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="Click on File Operations" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.FileOperationsPractice.feature:Click on File Operations" />
+        <item itemvalue="Behave.FileOperationsPractice.feature" />
         <item itemvalue="Behave.Dynamic.feature" />
         <item itemvalue="Behave.Dynamic.feature:Click on Dynamic Elements from slide menu to Generate Dynamic Content" />
         <item itemvalue="Behave.Dynamic.feature:Click on Dynamic Elements from slide menu to Hidden &amp; Dynamic Elements" />
-        <item itemvalue="Behave.Dynamic.feature:Click on Dynamic Elements the dashboard to Hidden &amp; Dynamic Elements" />
-        <item itemvalue="Behave.Dynamic.feature:Click on Dynamic Elements from slide menu to Lazy Loading Images" />
       </list>
     </recent_temporary>
   </component>
@@ -229,6 +231,7 @@
       <workItem from="1769611748244" duration="16063000" />
       <workItem from="1770029925091" duration="13447000" />
       <workItem from="1770186094497" duration="14460000" />
+      <workItem from="1770371493198" duration="3632000" />
     </task>
     <task id="LOCAL-00001" summary="sign up">
       <option name="closed" value="true" />
@@ -302,7 +305,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Drag-and-Drop" />
+                        <option value="origin/File-Operations-Practice" />
                       </list>
                     </value>
                   </entry>
@@ -327,13 +330,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/signin_page.py</url>
-          <line>122</line>
+          <line>136</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/signin_page.py</url>
-          <line>54</line>
+          <line>55</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pages/signin_page.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -354,8 +362,10 @@
     <SUITE FILE_PATH="coverage/learnqa_python$Dynamic_feature_Click_on_Dynamic_Elements_from_slide_menu_to_delayed_elements.coverage" NAME="Dynamic.feature:Click on Dynamic Elements from slide menu to delayed elements Coverage Results" MODIFIED="1770208803062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$signup_feature_Successful_login_with_valid_credentials.coverage" NAME="signup.feature:Successful login with valid credentials Coverage Results" MODIFIED="1770031814272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$Dynamic_feature_Click_on_Dynamic_Elements_the_dashboard_to_Lazy_Loading_Images.coverage" NAME="Dynamic.feature:Click on Dynamic Elements the dashboard to Lazy Loading Images Coverage Results" MODIFIED="1770298659505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/learnqa_python$FileOperationsPractice_feature_Click_on_File_Operations.coverage" NAME="FileOperationsPractice.feature:Click on File Operations Coverage Results" MODIFIED="1770375163318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/LearningPython$login_feature.coverage" NAME="login.feature Coverage Results" MODIFIED="1769630503316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$Dynamic_feature_Click_on_Dynamic_Elements_from_slide_menu_to_Generate_Dynamic_Content.coverage" NAME="Dynamic.feature:Click on Dynamic Elements from slide menu to Generate Dynamic Content Coverage Results" MODIFIED="1770319053947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/learnqa_python$FileOperationsPractice_feature.coverage" NAME="FileOperationsPractice.feature Coverage Results" MODIFIED="1770375076180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$Dynamic_feature_Click_on_Dynamic_Elements_the_dashboard_to_AJAX_Data_Loading.coverage" NAME="Dynamic.feature:Click on Dynamic Elements the dashboard to AJAX Data Loading Coverage Results" MODIFIED="1770224730591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$Dynamic_feature.coverage" NAME="Dynamic.feature Coverage Results" MODIFIED="1770319183293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/LearningPython$signup_feature_Successful_login_with_valid_credentials.coverage" NAME="signup.feature:Successful login with valid credentials Coverage Results" MODIFIED="1769682501229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
