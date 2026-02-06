@@ -157,3 +157,8 @@ def step_impl(context:runner.Context):
 def step_impl(context: runner.Context):
     # context.page.pause()
     context.signin_page.download_button()
+
+
+@then("user views shadow successfully")
+def step_impl(context: runner.Context):
+   context.signin_page.shadow_button()

@@ -29,6 +29,7 @@ class SigninPage:
         self._views_hidden_element = page.get_by_text('Hidden element revealed!')
         self._generate_dynamic_content = page.locator('[id="dynamic-content"]')
         self._process_file = page.get_by_text('File processed successfully!')
+        self._shadow_button = page.locator('[class="p-2 rounded text-center text-xs bg-green-100 text-green-800"]')
 
     def navigate(self):
         self.page.goto("https://www.learnaqa.info/")
@@ -197,6 +198,9 @@ class SigninPage:
 
     def views_hidden_element(self):
          return self._views_hidden_element.text_content()
+
+    def shadow_button(self):
+         return self._shadow_button.text_content()
 
     def generate_dynamic_content(self):
          return self._generate_dynamic_content.text_content()
