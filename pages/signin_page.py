@@ -1,6 +1,8 @@
 # pages/search_page.py
 import time
 from itertools import count
+from os import path
+from pathlib import Path
 
 from playwright.sync_api import Page
 # pages/signin_page.py
@@ -176,7 +178,11 @@ class SigninPage:
         self._create_button.click()
 
     def select_file(self):
-        file_path = "c:\\Users\\NUGA\\Downloads\\template_data (1).xlsx"
+        # file_path = "c:\\Users\\NUGA\\Downloads\\template_data (1).xlsx"
+        # file_path = path
+        # self.page.set_input_files("input[type='file']",file_path)
+        file_path = Path("c:\\Users\\NUGA\\Downloads\\template_data (1).xlsx")
+        # upload_page.select_file(file_path)
         self.page.set_input_files("input[type='file']",file_path)
 
 
