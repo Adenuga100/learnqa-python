@@ -19,6 +19,10 @@ class SigninPage:
         self._signin_button = page.get_by_role('button', name='Sign In')
         self._create_button = page.locator('[type="submit"]')
         self._cookies_btn = page.get_by_role('button', name='Accept All')
+        self._clear_field = page.locator('[id="search-field"]')
+        self._enter_and_esc = page.get_by_role('button', name='Enter')
+        self._double_click = page.locator('[id="editable-text"]')
+        self._mouse_hover = page.locator('[class="text-center"]')
         self._error_msg = page.locator("[data-test='error']")
         self._inventory = page.get_by_text("Practice Dashboard")
         self._items = page.get_by_role("heading", name="Drag and Drop Practice")
@@ -30,6 +34,7 @@ class SigninPage:
         self._generate_dynamic_content = page.locator('[id="dynamic-content"]')
         self._process_file = page.get_by_text('File processed successfully!')
         self._shadow_button = page.locator('[class="p-2 rounded text-center text-xs bg-green-100 text-green-800"]')
+        self._successfully = page.locator('[class="grid grid-cols-2 gap-2"] [class="font-medium"]').nth(0)
 
     def navigate(self):
         self.page.goto("https://www.learnaqa.info/")
@@ -178,6 +183,35 @@ class SigninPage:
     def cookies_button(self):
         self._cookies_btn.click()
 
+    def clear_field(self):
+        # self._clear_field.keyboard.press("Backspace")
+        # self._clear_field.click()  # focus input
+        # self.page.keyboard.press("Control+A")  # select all
+        # self.page.keyboard.press("Backspace")
+        text = self._clear_field.input_value()
+        for _ in range(len(text)):
+            self.page.keyboard.press("Backspace")
+
+        for _ in range(1):
+            self.page.keyboard.press("Backspace")
+
+    def enter_and_esc(self):
+        self._enter_and_esc.click()
+        self.page.keyboard.press("Escape")
+
+    def double_click(self):
+        self._double_click.dblclick()
+
+    def mouse_hover(self):
+        self._mouse_hover.scroll_into_view_if_needed()
+        self._mouse_hover.hover()
+        self._mouse_hover.hover()
+        self._mouse_hover.hover()
+        # self.page.wait_for_timeout(2000)
+        # self.page.wait_for_selector(".revealed-content")
+        self.page.wait_for_timeout(2000)
+
+
     def inventory_button(self):
          return self._inventory.text_content()
 
@@ -207,6 +241,9 @@ class SigninPage:
 
     def process_file(self):
          return self._process_file.text_content()
+
+    def successfully(self):
+         return self._successfully.text_content()
 
 
 

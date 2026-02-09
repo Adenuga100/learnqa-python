@@ -162,3 +162,28 @@ def step_impl(context: runner.Context):
 @then("user views shadow successfully")
 def step_impl(context: runner.Context):
    context.signin_page.shadow_button()
+
+
+@When("user clear the field")
+def step_impl(context:runner.Context):
+   context.signin_page.clear_field()
+
+
+@When("user click on enter and esc")
+def step_impl(context: runner.Context):
+   context.signin_page.enter_and_esc()
+
+
+@When("user double click")
+def step_impl(context:runner.Context):
+    context.signin_page.double_click()
+
+
+@When("user mouse hover")
+def step_impl(context:runner.Context):
+    context.signin_page.mouse_hover()
+
+
+@then("user views Keyboard & Mouse successfully")
+def step_impl(context:runner.Context):
+   context.signin_page.successfully()
