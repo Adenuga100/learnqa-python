@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bd4036b-46fc-4894-805c-52562be46b35" name="Changes" comment="File Operations">
-      <change afterPath="$PROJECT_DIR$/features/shadowDOM.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/step.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/step.py" afterDir="false" />
+    <list default="true" id="3bd4036b-46fc-4894-805c-52562be46b35" name="Changes" comment="Keyboard and mouse">
       <change beforePath="$PROJECT_DIR$/pages/signin_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/signin_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +84,9 @@
     "Behave.Dynamic.feature:Click on Dynamic Elements the dashboard to Lazy Loading Images.executor": "Run",
     "Behave.FileOperationsPractice.feature.executor": "Run",
     "Behave.FileOperationsPractice.feature:Click on File Operations.executor": "Run",
+    "Behave.Keysboardandmouse.feature.executor": "Debug",
+    "Behave.Keysboardandmouse.feature:Click on Keyboard & Mouse slide menu.executor": "Run",
+    "Behave.Keysboardandmouse.feature:Click on Keyboard & Mouse.executor": "Run",
     "Behave.draganddrop.feature.executor": "Debug",
     "Behave.draganddrop.feature:Click on drag and drop from slide menu.executor": "Run",
     "Behave.draganddrop.feature:Click on drag and drop from the dashboard.executor": "Run",
@@ -120,23 +121,7 @@
       <recent name="C:\Users\NUGA\PycharmProjects\LearningPython\features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.shadowDOM.feature:Click on Shadow Dom slide menu">
-    <configuration name="Dynamic.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
-      <module name="LearningPython" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Dynamic.feature" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Behave.FileOperationsPractice.feature">
     <configuration name="FileOperationsPractice.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="LearningPython" />
       <option name="ENV_FILES" value="" />
@@ -170,7 +155,7 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="shadowDOM.feature:Click on Shadow Dom slide menu" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+    <configuration name="Keysboardandmouse.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="LearningPython" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,12 +167,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/shadowDOM.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="Click on Shadow Dom slide menu" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Keysboardandmouse.feature" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="shadowDOM.feature:Click on Shadow Dom" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+    <configuration name="Keysboardandmouse.feature:Click on Keyboard &amp; Mouse slide menu" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="LearningPython" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -199,18 +183,35 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/shadowDOM.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="Click on Shadow Dom" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Keysboardandmouse.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="Click on Keyboard &amp; Mouse slide menu" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Keysboardandmouse.feature:Click on Keyboard &amp; Mouse" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="LearningPython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Keysboardandmouse.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="Click on Keyboard &amp; Mouse" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Behave.shadowDOM.feature:Click on Shadow Dom slide menu" />
-        <item itemvalue="Behave.shadowDOM.feature:Click on Shadow Dom" />
-        <item itemvalue="Behave.FileOperationsPractice.feature:Click on File Operations" />
         <item itemvalue="Behave.FileOperationsPractice.feature" />
-        <item itemvalue="Behave.Dynamic.feature" />
+        <item itemvalue="Behave.FileOperationsPractice.feature:Click on File Operations" />
+        <item itemvalue="Behave.Keysboardandmouse.feature:Click on Keyboard &amp; Mouse slide menu" />
+        <item itemvalue="Behave.Keysboardandmouse.feature:Click on Keyboard &amp; Mouse" />
+        <item itemvalue="Behave.Keysboardandmouse.feature" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +233,7 @@
       <workItem from="1769611748244" duration="16063000" />
       <workItem from="1770029925091" duration="13447000" />
       <workItem from="1770186094497" duration="14460000" />
-      <workItem from="1770371493198" duration="5010000" />
+      <workItem from="1770371493198" duration="14810000" />
     </task>
     <task id="LOCAL-00001" summary="sign up">
       <option name="closed" value="true" />
@@ -282,7 +283,23 @@
       <option name="project" value="LOCAL" />
       <updated>1770375209294</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Shadow Dom">
+      <option name="closed" value="true" />
+      <created>1770376625759</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1770376625759</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Keyboard and mouse">
+      <option name="closed" value="true" />
+      <created>1770662307957</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1770662307957</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +331,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Shadow-DOM" />
+                        <option value="origin/File-Operations-Practice" />
                       </list>
                     </value>
                   </entry>
@@ -333,25 +350,27 @@
     <MESSAGE value="slide menus for drag and drop" />
     <MESSAGE value="AJAX Data Loading" />
     <MESSAGE value="File Operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="File Operations" />
+    <MESSAGE value="Shadow Dom" />
+    <MESSAGE value="Keyboard and mouse" />
+    <option name="LAST_COMMIT_MESSAGE" value="Keyboard and mouse" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/signin_page.py</url>
-          <line>137</line>
+          <line>144</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/signin_page.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="11" />
+          <line>69</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/signin_page.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="12" />
+          <line>217</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -365,6 +384,8 @@
     <SUITE FILE_PATH="coverage/learnqa_python$Dynamic_feature_Click_on_Dynamic_Elements_from_slide_menu_to_Generate_Dynamic_Content.coverage" NAME="Dynamic.feature:Click on Dynamic Elements from slide menu to Generate Dynamic Content Coverage Results" MODIFIED="1770319053947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$Dynamic_feature_Click_on_Dynamic_Elements_the_dashboard_to_AJAX_Data_Loading.coverage" NAME="Dynamic.feature:Click on Dynamic Elements the dashboard to AJAX Data Loading Coverage Results" MODIFIED="1770224730591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$Dynamic_feature.coverage" NAME="Dynamic.feature Coverage Results" MODIFIED="1770319183293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/learnqa_python$Keysboardandmouse_feature.coverage" NAME="Keysboardandmouse.feature Coverage Results" MODIFIED="1770638348705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/learnqa_python$Keysboardandmouse_feature_Click_on_Keyboard___Mouse_slide_menu.coverage" NAME="Keysboardandmouse.feature:Click on Keyboard &amp; Mouse slide menu Coverage Results" MODIFIED="1770661917080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$Dynamic_feature_Click_on_Dynamic_Elements_from_slide_menu_to_AJAX_Data_Loading.coverage" NAME="Dynamic.feature:Click on Dynamic Elements from slide menu to AJAX Data Loading Coverage Results" MODIFIED="1770224805522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/LearningPython$signin_feature_Successful_login_with_valid_credentials.coverage" NAME="signin.feature:Successful login with valid credentials Coverage Results" MODIFIED="1769682472303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$signin_feature_Successful_login_with_valid_credentials.coverage" NAME="signin.feature:Successful login with valid credentials Coverage Results" MODIFIED="1770034022987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -377,9 +398,10 @@
     <SUITE FILE_PATH="coverage/learnqa_python$Dynamic_feature_Click_on_Dynamic_Elements_from_slide_menu_to_Lazy_Loading_Images.coverage" NAME="Dynamic.feature:Click on Dynamic Elements from slide menu to Lazy Loading Images Coverage Results" MODIFIED="1770317865077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$draganddrop_feature_Click_on_drag_and_drop_from_the_dashboard.coverage" NAME="draganddrop.feature:Click on drag and drop from the dashboard Coverage Results" MODIFIED="1770188534193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/learnqa_python$Dynamic_feature_Click_on_Dynamic_Elements_the_dashboard_to_Lazy_Loading_Images.coverage" NAME="Dynamic.feature:Click on Dynamic Elements the dashboard to Lazy Loading Images Coverage Results" MODIFIED="1770298659505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/learnqa_python$FileOperationsPractice_feature_Click_on_File_Operations.coverage" NAME="FileOperationsPractice.feature:Click on File Operations Coverage Results" MODIFIED="1770375163318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/learnqa_python$FileOperationsPractice_feature_Click_on_File_Operations.coverage" NAME="FileOperationsPractice.feature:Click on File Operations Coverage Results" MODIFIED="1770663087020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/LearningPython$login_feature.coverage" NAME="login.feature Coverage Results" MODIFIED="1769630503316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/learnqa_python$FileOperationsPractice_feature.coverage" NAME="FileOperationsPractice.feature Coverage Results" MODIFIED="1770375076180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/learnqa_python$Keysboardandmouse_feature_Click_on_Keyboard___Mouse.coverage" NAME="Keysboardandmouse.feature:Click on Keyboard &amp; Mouse Coverage Results" MODIFIED="1770661796230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/learnqa_python$FileOperationsPractice_feature.coverage" NAME="FileOperationsPractice.feature Coverage Results" MODIFIED="1770663245785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/LearningPython$signup_feature_Successful_login_with_valid_credentials.coverage" NAME="signup.feature:Successful login with valid credentials Coverage Results" MODIFIED="1769682501229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
